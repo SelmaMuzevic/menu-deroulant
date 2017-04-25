@@ -1,0 +1,72 @@
+body {
+    background-image: url(http://www.villaverde.fr/media/wysiwyg/Institutionnel/Conseils/Animalerie/poisson-rouge-content6.jpg);
+    background-position-y: 15em;
+    background-size: 50em;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: auto;
+    height: 300px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu .categorie {
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.menu .categorie:hover {
+    background-color: lightgray;
+}
+
+.menu .categorie ul {
+    display: none;
+    padding: 10px;
+    width: 140px;
+    background-color: violet;
+}
+
+.menu .categorie li {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid darkgray;
+    position: relative;
+}
+
+.menu .categorie:last-child ul ul {
+    left: -100%;
+}
+
+.menu .categorie li:last-child {
+    border-bottom: none;
+}
+
+
+/*Affichage des menus et sous-menu au hover sur leur parent*/
+
+.menu li:hover>ul {
+    display: block;
+}
+
+.menu .categorie ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
