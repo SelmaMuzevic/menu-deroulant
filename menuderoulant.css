@@ -15,13 +15,17 @@ li {
     list-style: none;
 }
 
+li:hover {
+    cursor: default;
+}
+
 .menu {
     display: flex;
     justify-content: space-around;
 }
 
 .menu .categorie {
-    width: 140px;
+    width: 150px;
     height: 30px;
     line-height: 30px;
     text-align: center;
@@ -39,7 +43,7 @@ h2 {
 .menu .categorie ul {
     display: none;
     padding: 10px;
-    width: 140px;
+    width: 130px;
     background-color: violet;
 }
 
@@ -58,9 +62,6 @@ h2 {
     border-bottom: none;
 }
 
-
-/*Affichage des menus et sous-menu au hover sur leur parent*/
-
 .menu li:hover>ul {
     display: block;
 }
@@ -69,4 +70,8 @@ h2 {
     position: absolute;
     top: 0;
     left: 100%;
+}
+
+.menu1 {
+    display: flex;
 }
